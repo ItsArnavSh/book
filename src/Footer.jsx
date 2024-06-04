@@ -16,7 +16,7 @@ function Logo()
 export default function Footer()
 {
     return(
-        <div className="bg-black text-white andika-regular">
+        <div className="bg-black text-white andika-regular h-[300px]">
             <div className="flex flex-row w-full items-center justify-center">
                 <div className="w-full md:w-[30%]">
                 <Logo />

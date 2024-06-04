@@ -14,7 +14,7 @@ export default function Reviews()
 
     return(
         <div className="flex flex-col items-center md:h-lvh md:justify-center">
-            <h1 className="andika-bold text-center text-5xl p-4">Customer Testimonials</h1>
+            <h1 className="andika-bold text-center text-5xl p-4 m-5 ">Customer Testimonials</h1>
             <CarouselD />
         </div>
         )
@@ -41,7 +41,7 @@ function CarouselD() {
         <CarouselContent>
           {Array.from({ length: customers.length }).map((_, index) => (
             <CarouselItem key={index}>
-              <div className="p-1 w-full flex flex-row items-center andika-regular">
+              <div className="p-1 w-full flex flex-col md:flex-row items-center andika-regular">
                 <div className="flex flex-col flex-grow">
                     <p>{customers[index].details}</p>
                     <div className="flex flex-row">
@@ -53,7 +53,7 @@ function CarouselD() {
 
                         </div>
                         <div className="flex flex-col flex-grow">
-                        <p className="andika-regular">{customers[index].name},</p>
+                        <p className="andika-regular">{customers[index].name}</p>
                         <p>{customers[index].designation}, {customers[index].company}</p>
                         </div>
                         <Avatar className = "">
@@ -67,7 +67,7 @@ function CarouselD() {
                     </div>
                 </div>
                 <div>
-                    <img src={customers[index].cover} className="min-w-[200px]"/>
+                    <img src={customers[index].cover} className="min-w-[200px] p-6"/>
                 </div>
 
               </div>

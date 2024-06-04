@@ -14,7 +14,7 @@ import {
     DrawerTrigger,
   } from "@/components/ui/drawer"
   let contents = ["Product","Pricing","Industry","Customer Stories","About","Blog"];
-  let writer = contents.map(x => (<a className=" p-3 text-sm andika-regular">{x}</a>))
+  let writer = contents.map(x => (<a className=" p-3 text-xl andika-regular">{x}</a>))
   
 import cover from "./assets/Items/img.png"
 function Menu()
@@ -98,7 +98,7 @@ function Title()
     <p className="text-white md:text-6xl text-2xl andika-bold mt-10 text-center md:text-left">Collect, Connect<br />
     and <span className="gradient-text">Comprehend</span></p>
     <div className="h-[50px]"></div>
-    <p className="text-white text-sm andika-regular" >Empower Your Learning Journey with CleverBooks. Unlock the tools you need for seamless learning: Effortless note-taking, intuitive idea connections, Dynamic flashcard creation, and AI-guided summaries.</p>
+    <p className="text-white text-xl andika-regular w-[80%]" >Empower Your Learning Journey with CleverBooks. Unlock the tools you need for seamless learning: Effortless note-taking, intuitive idea connections, Dynamic flashcard creation, and AI-guided summaries.</p>
     <div className="h-[50px] "></div>
     <img src={started} className="w-full md:w-[50%]"></img>
     </div>)
@@ -108,7 +108,7 @@ function HeroMain()
     return(
     <div className="flex md:flex-row flex-col w-full items-center justify-center">
     <Title  />
-    <img src = {cover}></img>
+    <img src = {cover} className="w-[700px]"></img>
     </div>
     )
 
@@ -130,8 +130,8 @@ export default function Hero() {
     return(
         <div className="flex flex-col md:h-lvh herosec  p-0 m-0 md:border-white md:border-2">
         <Heading />
-        <p className="text-center"></p>
-        <HeroMain />
+        <div className="flex flex-row justify-center h-full"><HeroMain /></div>
+        
         <Divider />
       </div>
     )}

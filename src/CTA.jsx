@@ -13,20 +13,20 @@ function Tas()
   </TabsList>
   <TabsContent value="Android">
     <div className="flex flex-col items-center">
-        <p>Install The Latest Version from PlayStore:</p>
-        <a href = "/    "> <img src = "https://static.vecteezy.com/system/resources/previews/017/396/800/non_2x/google-play-store-mobile-apps-logo-free-png.png" className="h-[60px]"/> </a>
+        <p className="text-center andika-regular">Install The Latest Version from PlayStore:</p>
+        <a href = "/    "> <img src = "https://static.vecteezy.com/system/resources/previews/017/396/800/non_2x/google-play-store-mobile-apps-logo-free-png.png" className="h-[80px] p-4"/> </a>
     </div>
   </TabsContent>
   <TabsContent value="IOS">
   <div className="flex flex-col items-center">
-        <p>Install The Latest Version from AppStore:</p>
-        <a href = "/    "> <img src = {Appstore} className="h-[60px]"/> </a>
+        <p className="text-center andika-regular">Install The Latest Version from AppStore:</p>
+        <a href = "/    "> <img src = {Appstore} className="h-[80px] p-4"/> </a>
     </div>
   </TabsContent>
   <TabsContent value="Web">
   <div className="flex flex-col items-center">
-        <p>Visit our Website for More Information:</p>
-        <a href = "/    "> <img src = {Logo} className="h-[60px]"/> </a>
+        <p className="text-center andika-regular">Visit our Website for More Information:</p>
+        <a href = "/    "> <img src = {Logo} className="h-[100px] p-4"/> </a>
     </div>
   </TabsContent>
 </Tabs>
@@ -38,8 +38,8 @@ export default function CTA()
 {
     return(
         <div className="flex flex-col items-center h-lvh justify-center">
-            <h1 className="text-5xl andika-bold p-5">So, What are you waiting for? </h1>
-            <p className="text-2xl andika-regular text-center">Install CleverBooks On The Platform of Your Choice!</p>
+            <h1 className=" text-3xl md:text-5xl andika-bold p-5 text-center">So, What are you waiting for? </h1>
+            <p className="text-2xl andika-regular text-center">Install CleverBooks Today!</p>
             <div className="h-[200px] p-5"><Tas /></div>
             
             
