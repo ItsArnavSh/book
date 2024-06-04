@@ -13,6 +13,8 @@ import {
     DrawerTitle,
     DrawerTrigger,
   } from "@/components/ui/drawer"
+  let contents = ["Product","Pricing","Industry","Customer Stories","About","Blog"];
+  let writer = contents.map(x => (<a className=" p-3 text-sm andika-regular">{x}</a>))
   
 import cover from "./assets/Items/img.png"
 function Menu()
@@ -23,8 +25,11 @@ function Menu()
   <DrawerTrigger><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" className=" ml-3 mt-9 h-[30px]"/></DrawerTrigger>
   <DrawerContent>
     <DrawerHeader>
-      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-      <DrawerDescription>This action cannot be undone.</DrawerDescription>
+      <DrawerTitle>Menu</DrawerTitle>
+      <DrawerDescription>
+        <div className="text-black flex flex-col">{writer}</div>
+        
+      </DrawerDescription>
     </DrawerHeader>
     <DrawerFooter>
       
@@ -56,11 +61,10 @@ function Contents()
 {
 
 
-    let contents = ["Product","Pricing","Industry","Customer Stories","About","Blog"];
-    let writer = contents.map(x => (<a className="text-white p-3 text-sm ">{x}</a>))
+   
     return(
         <>
-        <div className="text-center flex md:flex-row flex-col md:flex h-[40px] hidden">
+        <div className="text-center  md:flex-row flex-col md:flex h-[40px] hidden text-white">
             {writer}
         </div>
         </>
