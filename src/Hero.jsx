@@ -20,7 +20,7 @@ function Menu()
     return(
         <>
         <Drawer>
-  <DrawerTrigger>Open</DrawerTrigger>
+  <DrawerTrigger><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" className=" ml-3 mt-9 h-[30px]"/></DrawerTrigger>
   <DrawerContent>
     <DrawerHeader>
       <DrawerTitle>Are you absolutely sure?</DrawerTitle>
