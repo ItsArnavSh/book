@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.andika-regular {
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.andika-bold {
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.andika-regular-italic {
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.andika-bold-italic {
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.herosec{
+  background: linear-gradient(to right, #000000 0%, #307069 100%);
+
+}
+.gradient-text {
+  background: linear-gradient(to right, #6EB27F, #4C90D7); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text; /* This is for non-webkit browsers */
+}
+.image-button {
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.image-button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-button .image1 {
+  opacity: 1;
+}
+
+.image-button .image2 {
+  opacity: 0;
+}
+
+.image-button:hover .image1 {
+  opacity: 0;
+}
+
+.image-button:hover .image2 {
+  opacity: 1;
+}
+.custom-shape-divider-bottom-1717495877 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1717495877 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+}
+
+.custom-shape-divider-bottom-1717495877 .shape-fill {
+  fill: #FFFFFF;
+}
