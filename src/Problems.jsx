@@ -7,8 +7,8 @@ function Solution({name,icon,desc})
 {
     return(
         <>
-        <div className=' bg-blue-200 rounded-md flex flex-col h-[300px] w-[20%] m-2 p-3'>
-        <img src={icon} className='h-20 w-20'/>
+        <div className=' bg-blue-200 rounded-md flex flex-col md:h-[300px]  md:w-[20%] m-2 p-3'>
+        <img src={icon} className='h-10 w-10 md:h-20 md:w-20'/>
         <div className='m-3'></div>
         <h1 className='text-xl'>{name}</h1>
         <div className='m-3'></div>
