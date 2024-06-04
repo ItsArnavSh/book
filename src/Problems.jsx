@@ -7,7 +7,7 @@ function Solution({name,icon,desc})
 {
     return(
         <>
-        <div className=' bg-blue-200 rounded-md flex flex-col md:h-[300px]  md:w-[20%] m-2 p-3'>
+        <div className=' bg-green-100 rounded-md flex flex-col md:h-[300px]  md:w-[20%] m-2 p-3'>
         <img src={icon} className='h-10 w-10 md:h-20 md:w-20'/>
         <div className='m-3'></div>
         <h1 className='text-xl'>{name}</h1>
@@ -44,7 +44,7 @@ export default function Problems()
     const print = data.map((x)=> <Solution name = {x.name} icon={x.icon} desc = {x.desc} className = ""/>)
     return(
         <>
-        <div className='w-full'>
+        <div className='w-full md:h-lvh md:justify-center flex flex-col'>
         
         
 

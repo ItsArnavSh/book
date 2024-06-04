@@ -86,3 +86,46 @@
 .custom-shape-divider-bottom-1717495877 .shape-fill {
   fill: #FFFFFF;
 }
+.custom-shape-divider-top-1717526344 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1717526344 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1717526344 .shape-fill {
+  fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1717526420 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1717526420 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1717526420 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.herosec2{
+  background: linear-gradient(to right, #6EB27F 0%, #4C90D7 100%);
+}
