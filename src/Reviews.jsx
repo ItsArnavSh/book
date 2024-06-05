@@ -137,22 +137,19 @@ function CarouselD() {
               <div className="p-1 w-full flex flex-col md:flex-row items-center andika-regular">
                 <div className="flex flex-col flex-grow">
                     <p>{customers[index].details}</p>
-                    <div className="flex flex-row">
-                        <div className="flex flex-row p-2">
+                    <div className="flex flex-row justify-center items-center mt-4">
+                        <div className="flex flex-row m-2   ">
                         <Avatar>
             <AvatarImage src={customers[index].profile} />
                 <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
 
                         </div>
-                        <div className="flex flex-col flex-grow">
-                        <p className="andika-regular">{customers[index].name}</p>
+                        <div className="flex flex-col flex-grow pl-5">
+                        <p className="andika-bold">{customers[index].name}</p>
                         <p>{customers[index].designation}, {customers[index].company}</p>
                         </div>
-                        <Avatar className = "">
-            <AvatarImage src={customers[index].companyProfile} />
-                <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
+                       
                     </div>
                     <div className="flex flex-row ">
                     <div className="p-3 m-4 bg-green-100 rounded-md andika-regular"><p className="gradient-text andika-bold text-xl">{customers[index].point1}</p><p className="">{customers[index].point11}</p></div>
