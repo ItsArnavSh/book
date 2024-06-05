@@ -17,12 +17,12 @@ export default function Footer()
 {
     return(
         <div className="bg-black text-white andika-regular h-[300px]">
-            <div className="flex flex-row w-full items-center justify-center">
-                <div className="w-full md:w-[30%]">
+            <div className="flex flex-col md:flex-row w-full items-left md:items-center md:justify-center">
+                <div className="w-full md:w-[30%] items-center justify-center">
                 <Logo />
-                <p>Our brand creates software aimed at helping lessen the burden of schoolwork from students, and help them be more curious.</p>
+                <p className="text-left">Our brand creates software aimed at helping lessen the burden of schoolwork from students, and help them be more curious.</p>
                 </div>
-                <div>Located in Noida,India</div>
+                <div className="text-left">Located in Noida,India</div>
             </div>
         </div>
     )
