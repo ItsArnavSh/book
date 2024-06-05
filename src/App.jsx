@@ -56,14 +56,18 @@ function Logo()
 {
     return(
         <>
-         <div className="flex flex-row">
-            <img src = {logo} alt = "Logo of CleverBooks" className = "w-[100px]"></img>
-            <p className="pt-6 andika-bold text-white text-5xl cleverbooks">CleverBooks</p>
-            <div className="md:hidden block">
+        <div className="flex flex-row justify-between items-center p-4 border-b border-gray-200">
+            <div className="flex items-center">
+                <img src={logo} alt="Logo of CleverBooks" className="w-[100px]" />
+                <p className="andika-bold text-white text-5xl cleverbooks ml-4 md:ml-0">CleverBooks</p>
+            </div>
+            <div className='w-full'></div>
+            <div className="md:hidden block pb-5">
                 <Menu />
             </div>
-         </div>
-        </>
+        </div>
+    </>
+    
     )
 }
 function Contents()
@@ -82,7 +86,7 @@ function Contents()
 function Login()
 {
     return(
-        <div className = " md:flex md:flex-row h-[50px] hidden mr-10">
+        <div className = " md:flex md:flex-row h-[50px] hidden mr-10 ">
             <button className="gradient-text p-2 andika-bold text-xl hover:text-white  transition-all">Login</button>
             <button><img src = {talk} className=''></img></button>
         </div>
@@ -103,13 +107,13 @@ function Heading()
 function Title()
 {
     return(
-    <div className="w-[50%] flex flex-col items-left">
-    <p className="text-white md:text-6xl text-3xl andika-bold mt-10  md:text-left">Collect, Connect<br />
+    <div className="md:w-[50%] flex flex-col items-left">
+    <p className="text-white md:text-6xl text-5xl andika-bold mt-10  md:text-left">Collect, Connect<br />
     and <span className="gradient-text">Comprehend</span></p>
     <div className="h-[50px]"></div>
-    <p className="text-white text-xl andika-regular w-[80%] text-center md:text-left" >Empower Your Learning Journey with CleverBooks. Unlock the tools you need for seamless learning: Effortless note-taking, intuitive idea connections, Dynamic flashcard creation, and AI-guided summaries.</p>
+    <p className="text-white text-xl andika-regular w-[80%] text-left" >Empower Your Learning Journey with CleverBooks. Unlock the tools you need for seamless learning: Effortless note-taking, intuitive idea connections, Dynamic flashcard creation, and AI-guided summaries.</p>
     <div className="h-[50px] "></div>
-    <button><img src={started} className="w-full md:w-[50%] hover:w-[60%] transition-all"></img></button>
+    <button><img src={started} className=" w-[60%] md:w-[50%] hover:w-[60%] md:hover:width-[70%] transition-all"></img></button>
     </div>)
 }
 function HeroMain()
