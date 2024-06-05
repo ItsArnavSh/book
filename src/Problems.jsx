@@ -7,7 +7,7 @@ function Solution({name,icon,desc})
 {
     return(
         <>
-        <div className=' bg-green-100 rounded-md flex flex-col md:h-[300px]  md:w-[20%] m-2 p-3'>
+        <div className=' bg-green-100 rounded-md flex flex-col md:h-[300px]  md:w-[20%] m-2 p-3 hover:md:h-[400px] justify-center transition-all'>
         <img src={icon} className='h-10 w-10 md:h-20 md:w-20'/>
         <div className='m-3'></div>
         <h1 className='text-xl'>{name}</h1>

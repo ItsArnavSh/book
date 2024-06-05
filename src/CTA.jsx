@@ -38,8 +38,7 @@ export default function CTA()
 {
     return(
         <div className="flex flex-col items-center h-lvh justify-center">
-            <h1 className=" text-3xl md:text-5xl andika-bold p-5 text-center">So, What are you waiting for? </h1>
-            <p className="text-2xl andika-regular text-center">Install CleverBooks Today!</p>
+            <p className="text-3xl md:text-5xl andika-bold p-5 text-center">Install <span className="gradient-text cleverbooks">CleverBooks</span> Today!</p>
             <div className="h-[200px] p-5"><Tas /></div>
             
             
